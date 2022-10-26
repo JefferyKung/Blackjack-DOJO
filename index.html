@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jeffery's BJ Dojo</title>
+        <link rel="stylesheet" href="blackjack.css">
+        
+    </head>
+
+    <body>
+
+        <main>
+            <section class="title">
+                <h1 id="title">Mastering BJ w/ Jeffery</h1>
+                <h2 id="subTitle">We believe<br>Practice makes perfect.</h2>
+            </section>
+
+            <section class="gameZone">
+                <h2>Dealer: <span id="dealer-sum"></span></h2>
+                <div id="dealer-cards">
+                    <img id="hidden">
+                </div>        
+                <h2><span id="splitS1">You: </span><span id="your-sum"></span></h2>
+                <div id="your-cards"></div>
+                <div class="splitSection">Your second ones: <span id="your-sum2"></span></div>
+                <br>
+                <button class="btn" id="hit">Hit</button>
+                <button class="btn" id="stay">Stand</button>
+                <button class="btn" id="dbD" onclick="doubleDown()">Double Down</button>
+                <button class="btn" id="split" onclick="split()">Split</button><br><br>
+                <div class="splitFuncBtns">
+                    <button class="btnS" id="splitHit1">Hit for your first pair</button>
+                    <button class="btnS" id="splitStand1">Stand for your first pair</button>
+                    <button class="btnS" id="splitHit2">Hit for your second pair</button>
+                    <button class="btnS" id="splitStand2" onclick="dealerHit()">Stand for your second pair</button>
+                </div>
+                <button id="dealerHitBtn" onclick="dealerHit()">Dealer Hit (stand on Soft 17)</button><br><br>
+                <button id="refresh" onclick="location.reload()">Refresh</button>
+                <p id="results"></p>
+            </section>
+
+            <section class="straChart">
+                <img id="chart" src="/cards/Blackjack-Basic-Strategy-Chart.png">
+            </section>
+        </main>
+        <div>
+            <img id="univ" src="/cards/wallpaper.jpg">
+
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+        <script src="blackjack.js"></script>
+    </body>
+</html>

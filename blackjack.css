@@ -1,0 +1,209 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    
+}
+
+#dealer-cards img {
+    height: 175px;
+    width: 125px;
+    margin: 1px;
+}
+
+#your-cards img {
+    height: 175px;
+    width: 125px;
+    margin: 1px;
+}
+
+#hit {
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+}
+
+#stay {
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+}
+
+#results{
+    font-size: 3rem;
+    color: red;
+    font-weight: bolder;
+    background-color: #00ff3c;
+    border-radius: 70%;
+    
+}
+
+
+main{
+    display: flex;
+    justify-content: space-around;
+    /* margin-top: 2.5%; */
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url(/cards/bg.jpg) no-repeat center/cover;
+    height: 130vh;
+    width: 100vw;
+    color: white;
+    /* z-index: 5; */
+}
+
+.gameZone{
+    width:50%;
+    padding-top: 3%;
+}
+
+.straChart{
+    width: 40%;
+    padding-right: 3%;
+}
+
+#chart{
+    width: 100%;
+    height: 70%;
+    padding-top: 5%;
+    /* padding-right: 15%; */
+}
+
+#refresh{
+    background: #00ff3c;
+    background-image: -webkit-linear-gradient(top, #00ff3c, #1ba376);
+    background-image: -moz-linear-gradient(top, #00ff3c, #1ba376);
+    background-image: -ms-linear-gradient(top, #00ff3c, #1ba376);
+    background-image: -o-linear-gradient(top, #00ff3c, #1ba376);
+    background-image: linear-gradient(to bottom, #00ff3c, #1ba376);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    border: solid #1cffbf 2px;
+    text-decoration: none;
+}
+
+#refresh:hover {
+    background: #ffff21;
+    background-image: -webkit-linear-gradient(top, #ffff21, #e65050);
+    background-image: -moz-linear-gradient(top, #ffff21, #e65050);
+    background-image: -ms-linear-gradient(top, #ffff21, #e65050);
+    background-image: -o-linear-gradient(top, #ffff21, #e65050);
+    background-image: linear-gradient(to bottom, #ffff21, #e65050);
+    text-decoration: none;
+  }
+
+
+.btn {
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    border: solid #6ac0f5 2px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+  }
+
+  #dealerHitBtn{
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    background: #ffac05;
+    padding: 10px 20px 10px 20px;
+    border: solid #ffd91c 2px;
+    text-decoration: none;
+  }
+
+
+
+  .splitSection{
+    display: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+
+  }
+
+  .splitSection img{
+    height: 175px;
+    width: 125px;
+    margin: 1px;
+    
+  }
+
+  .btnS{
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 10px 20px 10px 20px;
+    border: solid #6ac0f5 2px;
+    text-decoration: none;
+    width: 80%;
+  }
+
+  .splitFuncBtns{
+    display: none;
+    margin-bottom: 5%;
+    padding: 0 2%;
+  }
+
+  #univ{
+    width: 100vw;
+    height: 200vh;
+    position: relative;
+    /* right: 1%; */
+
+  }
+
+
+  .title{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    /* flex-wrap: nowrap; */
+    flex-direction :column;
+    width: 30%;
+    padding-left: 3%;
+  }
+
+  .title h1{
+    position: relative;
+    bottom:10%;
+    font-size: 4rem;
+  }
+
+  .title h2{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  }
