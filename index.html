@@ -17,13 +17,21 @@
             </section>
 
             <section class="gameZone">
-                <h2>Dealer: <span id="dealer-sum"></span></h2>
-                <div id="dealer-cards">
-                    <img id="hidden">
-                </div>        
-                <h2><span id="splitS1">You: </span><span id="your-sum"></span></h2>
-                <div id="your-cards"></div>
-                <div class="splitSection">Your second ones: <span id="your-sum2"></span></div>
+                <div id="wrapper">
+                    <div class="dealer">
+                        <h2>Dealer: <span id="dealer-sum"></span></h2>
+                        <div id="dealer-cards">
+                            <img id="hidden">
+                        </div> 
+                    </div>
+                    <div class="player">
+                        <h2><span id="splitS1">You: </span><span id="your-sum"></span></h2>
+                        <div id="your-cards"></div>
+                        <div class="splitSection">Your second ones: <span id="your-sum2"></span></div>
+                    </div>
+                </div>           
+                       
+               
              
                 <p id="results"></p>
                 <button class="btn" id="hit">Hit</button>

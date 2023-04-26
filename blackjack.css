@@ -256,6 +256,19 @@ main{
       display: none;
     }
 
+    #wrapper{
+      display:flex
+    }
+
+    .dealer{
+      width: 50%;
+    }
+
+    .player{
+      width: 50%;
+
+    }
+
   
 
   }
