@@ -15,35 +15,24 @@ body {
 }
 
 #dealer-cards img {
-    height: 175px;
-    width: 125px;
-    margin: 1px;
+    height: 135px;
+    width: 100px;
+    margin:  0 1.5%;
 }
 
 #your-cards img {
-    height: 175px;
-    width: 125px;
-    margin: 1px;
-}
-
-#hit {
+    height: 135px;
     width: 100px;
-    height: 50px;
-    font-size: 20px;
-}
-
-#stay {
-    width: 100px;
-    height: 50px;
-    font-size: 20px;
+    margin: 0 1.5%;
 }
 
 #results{
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: red;
     font-weight: bolder;
     background-color: #00ff3c;
     border-radius: 70%;
+
     
 }
 
@@ -61,7 +50,7 @@ main{
 
 .gameZone{
     width:50%;
-    padding-top: 3%;
+    padding-top: 0.5%;
 }
 
 .straChart{
@@ -117,7 +106,7 @@ main{
     border-radius: 28px;
     font-family: Arial;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 18px;
     padding: 10px 20px 10px 20px;
     border: solid #6ac0f5 2px;
     text-decoration: none;
@@ -191,9 +180,11 @@ main{
 
   #univ{
     width: 100vw;
-    height: 200vh;
+    height: 100vh;
     position: relative;
     /* right: 1%; */
+    /* bottom:50%; */
+    margin-bottom: -5%;
 
   }
 
@@ -220,7 +211,7 @@ main{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
   }
 
-  @media only screen and (max-width: 1395px){
+  @media only screen and (max-width: 1080px){
     
     
     main{
